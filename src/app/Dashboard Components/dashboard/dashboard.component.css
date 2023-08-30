@@ -1,0 +1,88 @@
+
+.productTable>thead>tr>th {
+  padding: 0px 5px !important;
+}
+
+.productTable tbody tr:last-child {
+  position: sticky;
+  bottom: 0;
+  background: #198754;
+  color: white;
+}
+
+.productTable tbody tr:last-child:hover {
+  position: sticky;
+  bottom: 0;
+  background: #198754;
+}
+
+.productTable tbody tr:last-child>th {
+  padding: 3px 1px !important;
+}
+
+
+.bgnone {
+  background: none !important;
+  width: 33%;
+  text-align: center;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.bggradient {
+  background-image: linear-gradient(to bottom right, #a567e9, #28a2ff);
+  background: #ff9f43;
+}
+
+.bggradient2 {
+  /*background-image: linear-gradient(to bottom right, #fd7f68, #f8649e);*/
+  background: #1b2850;
+}
+
+
+.bggradient3 {
+  background-image: linear-gradient(to bottom right, #40a1ea, #3ccbc7);
+  background: #28c76f;
+}
+
+.whborder {
+  border: 1px solid #ffffff6b;
+}
+
+.ordericn {
+  background: #ffffff26;
+  padding: 10px;
+}
+
+.MainOrder {
+  display: flex;
+  align-items: center;
+}
+
+.orderhdicon {
+  font-size: 16px;
+  padding-left: 7px;
+  border-left: 3px solid white;
+  padding-right: 7px;
+  margin-left: -5px;
+}
+
+.orderdata {
+  padding-left: 39px;
+  font-size: 14px;
+  /*padding-top: 5px;
+    padding-bottom: 5px;*/
+}
+
+.MainShadow {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 20%), 12px 12px 10px -6px rgb(0 0 0 / 20%);
+}
+
+
+.Amount {
+  margin-bottom: -25px;
+  font-size: 18px !important;
+}

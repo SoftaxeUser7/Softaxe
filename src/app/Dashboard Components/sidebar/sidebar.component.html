@@ -1,0 +1,97 @@
+<div class="sidebar" id="sidebar">
+    <div class="slimScrollDiv">
+        <div class="sidebar-inner slimscroll">
+            <div id="sidebar-menu" class="sidebar-menu">
+                <ul class="p-0">
+                    <li class="active">
+                        <a href="index.html"><img src="assets/img/icons/dashboard.svg" alt="img"><span>Dashboard</span> </a>
+                    </li>
+
+                    <li id="admin" class="submenu">
+                        <a href="javascript:void(0);"><img src="assets/img/icons/product.svg" alt="img"><span> Admin</span> <span class="menu-arrow"></span></a>
+                        <ul>
+                            <li id="menu1"><a href="avascript:void(0);">Company Group</a></li>
+                            <li id="menu2"><a href="javascript:void(0);">Company</a></li>
+                            <li id="menu3"><a href="javascript:void(0);">Location</a></li>
+                            <li id="menu4"><a href="javascript:void(0);">Upload Excel File </a></li>								
+                            <li id="menu5"><a href="javascript:void(0);">POS</a></li>								
+                        </ul>
+                    </li>
+
+                    <li class="submenu securityLi">
+                        <a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img"><span> Accounts </span> <span class="menu-arrow"></span></a>
+                        <ul>
+                            <li id="menu15"><a asp-controller="ChartOfAccount" asp-action="ChartOfAccount">Chart Of Account</a></li>
+                            <li id="menu16"><a asp-controller="AccountsOpening" asp-action="AccountsOpening">Accounts Opening</a></li>
+                            <li id="menu17"><a asp-controller="PaymentReceipts" asp-action="PaymentReceipts" asp-route-Payment="Account">Payment </a></li>
+                            <li id="menu18"><a asp-controller="PaymentReceipts" asp-action="PaymentReceipts" asp-route-Recipts="Account">Recipts </a></li>
+                            <li id="menu19"><a asp-controller="JournalVoucher" asp-action="Index" >Journal Voucher</a></li>
+                            <li id="menu20"><a asp-controller="BillDueStatus" asp-action="ReciptsPaymentStatus">Recipts/Payments Status</a></li>
+                            <li id="menu21"><a asp-controller="LedgerAccount" asp-action="Index" asp-route-Tag="All">Accounts Ledger</a></li>
+                            <li id="menu22"><a asp-controller="BillDueStatus" asp-action="TrialBalance">Trial Balance</a></li>
+                            <li id="menu23"><a asp-controller="LedgerAccount" asp-action="ProfitLoss">Profit & Loss Comparison</a></li>
+                            <li id="menu24"><a asp-controller="LedgerAccount" asp-action="DayClose">Day Book</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu securityLi">
+                        <a href="javascript:void(0);"><img src="assets/img/icons/quotation1.svg" alt="img"><span> Inventory </span> <span class="menu-arrow"></span></a>
+                        <ul>
+                            <li id="menu29"><a asp-controller="Warehouse" asp-action="Warehouse">Warehouse</a></li>
+                            <li id="menu30"><a asp-controller="Product" asp-action="Product">Products</a></li>
+                            <li id="menu31"><a asp-controller="Product" asp-action="UpdateCategory">Change Category</a></li>
+                            <li id="menu32"><a asp-controller="StockOpening" asp-action="StockOpening">Stock Opening Entry</a></li>
+                            <li id="menu33"><a asp-controller="StockOpening" asp-action="StockAdjustment" asp-route-Tag="Debit">Stock Debit Note</a></li>
+                            <li id="menu34"><a asp-controller="StockOpening" asp-action="StockAdjustment" asp-route-Tag="Credit">Stock Credit Note</a></li>
+                            <li id="menu35"><a asp-controller="StockOpening" asp-action="StockTransfer">Transfer</a></li>
+                            <li id="menu36"><a asp-controller="StockOpening" asp-action="StockStatus">Stock Status</a></li>
+                            <li id="menu37"><a asp-controller="LedgerAccount" asp-action="ProductLedger">Product Ledger</a></li>
+                            <li id="menu38"><a asp-controller="LedgerAccount" asp-action="InventoryList" asp-route-Tag="InventoryList">Inventory List</a></li>
+                            <li id="menu39"><a asp-controller="LedgerAccount" asp-action="InventoryList" asp-route-Tag="ProductRate">Product Rate Comparison</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu securityLi">
+                        <a href="javascript:void(0);"><img src="assets/img/icons/purchase1.svg" alt="img"><span> Purchase</span> <span class="menu-arrow"></span></a>
+                        <ul>
+                            <li id="menu40"><a asp-controller="Supplier" asp-action="Supplier">Supplier's BioData</a></li>
+                            <li id="menu41"><a asp-controller="Purchase" asp-action="Purchase">Purchase Invoice</a></li>
+                            <li id="menu42"><a asp-controller="BillDueStatus" asp-action="BillStatusPurchase">Bill Due Status</a></li>
+                            <li id="menu43"><a asp-controller="PaymentReceipts" asp-action="PaymentReceipts" asp-route-Payment="Purchase">Payment </a></li>
+                            <li id="menu44"><a asp-controller="PaymentReceipts" asp-action="PaymentReceipts" asp-route-Recipts="Purchase">Recipts </a></li>
+                            <li id="menu45"><a asp-controller="LedgerAccount" asp-action="Index" asp-route-Tag="Supplier">Supplier Leadger</a></li>
+                            <li id="menu46"><a asp-controller="LedgerAccount" asp-action="PartyPosition" asp-route-Tag="Supplier">Party Balances Status</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu securityLi">
+                        <a href="javascript:void(0);"><img src="assets/img/icons/expense1.svg" alt="img"><span> Sales </span> <span class="menu-arrow"></span></a>
+                        <ul>
+                            <li id="menu47"><a asp-controller="Customer" asp-action="Customer">Customer's BioData</a></li>
+                            <li id="menu48"><a asp-controller="SaleManager" asp-action="Index">Sale Area Updation</a></li>
+                            <li id="menu49"><a asp-controller="OrderTakerLiveActivity" asp-action="OrderTakerLiveActivity">Order Taker's Live Activity</a></li>
+                            <li id="menu50"><a asp-controller="SalesInvoice" asp-action="SalesInvoice">Sales (By Order)</a></li>
+                            <li id="menu52"><a asp-controller="DailySaleWork" asp-action="DailySaleWork">Sales</a></li>
+                            <li id="menu53"><a asp-controller="BillDueStatus" asp-action="BillStatus">Bill Due Status</a></li>
+                            <li id="menu55"><a asp-controller="PaymentReceipts" asp-action="PaymentReceipts" asp-route-Recipts="Sale">Recipts </a></li>
+                            <li id="menu54"><a asp-controller="PaymentReceipts" asp-action="PaymentReceipts" asp-route-Payment="Sale">Payment </a></li>
+                            <li id="menu56"><a asp-controller="PDCheque" asp-action="Index">Post Dated Cheque</a></li>
+                            <li id="menu57"><a asp-controller="LedgerAccount" asp-action="Index" asp-route-Tag="Customer">Customer Leadger</a></li>
+                            <li id="menu58"><a asp-controller="LedgerAccount" asp-action="PartyPosition" asp-route-Tag="Customer">Party Balances Status</a></li>
+                            <li id="menu59"><a asp-controller="LedgerAccount" asp-action="GrossProfit">Sales Margin Status</a></li>
+                            <li id="menu60"><a asp-controller="LedgerAccount" asp-action="SaleMenCom" asp-route-Tag="Salesmen">Salesmen Commission</a></li>
+                            <li id="menu600"><a asp-controller="LedgerAccount" asp-action="SaleMenCom" asp-route-Tag="OrderTaker">Order Taker Commission</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="submenu justadmin">
+                        <a href="javascript:void(0);"><img src="assets/img/icons/transfer1.svg" alt="img"><span> Utilities </span> <span class="menu-arrow"></span></a>
+                        <ul>
+                            <li id="menu61"><a asp-controller="SecuritySystem" asp-action="Index">Security System </a></li>
+                            <li id="menu62"><a asp-controller="Account" asp-action="Register">Users</a></li>
+                            <li id="menu63"><a asp-controller="LedgerAccount" asp-action="LogStatus">Users Log Status </a></li>
+                            <li id="menu64"><a asp-controller="Slider" asp-action="Index">Mobile App Slider </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

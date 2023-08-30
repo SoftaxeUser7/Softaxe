@@ -1,0 +1,192 @@
+<div class="content ListPage">
+    <div class="page-header">
+        <div class="page-title">
+            <h4 class="newcolor">Chart of Account List</h4>
+            <h6 class="newcolor">Manage your Chart of Account</h6>
+        </div>
+        <div class="page-btn">
+            <div class="wordset newwordset">
+                <ul>
+                    <li>
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="pdf" id="pdfPrint">
+                            <img src="/assets/img/icons/pdf.svg" alt="img">
+                        </a>
+                    </li>
+                    <li>
+                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="excel" id="convertExel">
+                            <img src="/assets/img/icons/excel.svg" alt="img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <ng-select class="js-example-basic-single select2" id="drpL1Search"></ng-select>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <ng-select class="js-example-basic-single select2" id="drpL2Search"></ng-select>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <ng-select class="js-example-basic-single select2" id="drpL3Search"></ng-select>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <input type="search" class="form-control" id="txtL4Search" placeholder="Search Level 4">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <input type="search" class="form-control" id="txtL5Search" placeholder="Search Level 5">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="form-group">
+                        <div class="add-icon d-flex">
+                            <a id="filterReset" class="refreshiconc" data-bs-toggle="tooltip" data-bs-placement="top" title="RESET"><i class="fa fa-undo text-white"></i></a>
+                            <p href="javascript:void(0);" class="btn btn-addednew btnAdd">
+                                <img src="/assets/img/icons/plus.svg" alt="img" class="me-1">Add New
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive" style="height:380px;">
+                <table class="table" id="tbl-print">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="tablepd">Level1</th>
+                            <th colspan="2" class="tablepd">Level2</th>
+                            <th colspan="2" class="tablepd">Level3</th>
+                            <th colspan="2" class="tablepd">Level4</th>
+                            <th colspan="2" class="tablepd">Level5</th>
+                            <th class="tablepd">Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="detailList">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="content AddPage">
+
+    <div class="page-header">
+        <div class="page-title">
+            <h4>Chart Of Account Details</h4>
+        </div>
+        <div class="page-btn">
+            <a href="javascript:void(0);" class="btn btn-added btnList">
+                <i class="fa me-2 fa-th-list" data-bs-toggle="tooltip" title="" data-bs-original-title="fa fa-th-list" aria-label="fa fa-th-list"></i> Home
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="productdetails">
+                        <ul class="product-bar">
+                            <li>
+                                <h4>Level1</h4>
+                                <h6 class="form-group mb-0">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-sm-10 col-10">
+                                            <ng-select class="js-example-basic-single select2" id="level1List">
+                                            </ng-select>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 col-2 ps-0">
+                                            <div class="add-icon text-end">
+                                                <i class="fa fa-plus custom-plus-icon text-center" aria-label="fa fa-plus" data-bs-toggle="modal" data-bs-target="#level1Modal"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h6>
+                            </li>
+                            <li>
+                                <h4>Level2</h4>
+                                <h6 class="form-group mb-0">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-sm-10 col-10">
+                                            <ng-select class="js-example-basic-single select2" id="level2List">
+                                            </ng-select>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 col-2 ps-0">
+                                            <div class="add-icon text-end">
+                                                <i class="fa fa-plus custom-plus-icon text-center" aria-label="fa fa-plus" data-bs-toggle="modal" data-bs-target="#level2Modal"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h6>
+                            </li>
+                            <li>
+                                <h4>Level3</h4>
+                                <h6 class="form-group mb-0">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-sm-10 col-10">
+                                            <ng-select class="js-example-basic-single select2" id="level3List">
+                                            </ng-select>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 col-2 ps-0">
+                                            <div class="add-icon text-end">
+                                                <i class="fa fa-plus custom-plus-icon text-center" aria-label="fa fa-plus" data-bs-toggle="modal" data-bs-target="#level3Modal"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h6>
+                            </li>
+                            <li>
+                                <h4>Level4</h4>
+                                <h6 class="form-group mb-0">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-sm-10 col-10">
+                                            <ng-select class="js-example-basic-single select2" id="level4List">
+                                            </ng-select>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 col-2 ps-0">
+                                            <div class="add-icon text-end">
+                                                <i class="fa fa-plus custom-plus-icon text-center" aria-label="fa fa-plus" data-bs-toggle="modal" data-bs-target="#level4Modal"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h6>
+                            </li>
+                            <li class="activeForm">
+                                <h4>Level5</h4>
+                                <h6 class="form-group mb-0">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-sm-10 col-10">
+                                            <ng-select class="js-example-basic-single select2" id="level5List">
+                                            </ng-select>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-2 col-2 ps-0">
+                                            <div class="add-icon text-end">
+                                                <i class="fa fa-plus custom-plus-icon text-center" aria-label="fa fa-plus" data-bs-toggle="modal" data-bs-target="#level5Modal"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
