@@ -36,23 +36,23 @@
         <a href="index.html" class="logo-small">
           <img src="assets/img/logo-small.png" alt="">
         </a>
-        <a id="toggle_btn" href="javascript:void(0);">
+        <a id="toggle_btn" >
         </a>
       </div>
-
-      <a id="mobile_btn" class="mobile_btn" href="#sidebar">
+   
+      <!-- <a id="mobile_btn" class="mobile_btn" href="#sidebar">
         <span class="bar-icon">
           <span></span>
           <span></span>
           <span></span>
         </span>
-      </a>
+      </a> -->
       <div class="header-center align-items-left">
         <div class="row align-items-center">
 
           <div class="col-sm-3 p-0">
             <div class="cmp-image ">
-              <img b-geo0b2jv1f src="/assets/img/logo1.png" />
+              <img src="/assets/img/logo1.png" />
             </div>
           </div>
           <div class="col-sm-6 text-center fw-bolder fs-28">
@@ -139,21 +139,23 @@
         </div>
 
       </div>
-
+    </div>
 
       <div class="sidebar" id="sidebar">
         <div class="sidebar-inner slimscroll">
           <div id="sidebar-menu" class="sidebar-menu">
-            <ul b-geo0b2jv1f>
-              <li b-geo0b2jv1f>
-                <a><img src="/assets/img/icons/dashboard.svg" alt="img"><span b-geo0b2jv1f> Dashboard</span> </a>
+            <ul>
+              <li>
+                <a><img src="/assets/img/icons/dashboard.svg" alt="img"><span> Dashboard</span> </a>
               </li>
+
               <mat-nav-list>
                 <mat-list-item class="sidebar-list-item menu-arrow" (click)="toggleSubMenu('admin')">
-                  <mat-icon>admin</mat-icon><span b-geo0b2jv1f>Admin</span>
-                  
-                  <mat-icon class="menu-arrow" *ngIf="isSubMenuExpanded('admin')">keyboard_arrow_down</mat-icon>
-                  <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('admin')">expand_more</mat-icon>
+                    
+                  <a><img src="/assets/img/icons/product.svg" alt="img"> </a>
+                  Admin
+                  <mat-icon class="menu-arrow" *ngIf="isSubMenuExpanded('accounts')">keyboard_arrow_down</mat-icon>
+                  <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('accounts')">expand_more</mat-icon>
                 </mat-list-item>
                 <mat-list *ngIf="isSubMenuExpanded('admin')">
                   <mat-list-item >Company Group</mat-list-item>
@@ -165,7 +167,7 @@
 
               <mat-nav-list>
                 <mat-list-item class="submenu securityLi" (click)="toggleSubMenu('accounts')">
-                  <mat-icon>accounts</mat-icon>
+                    <a><img src="/assets/img/icons/users1.svg" alt="img"><span></span> </a>
                   Accounts
                   <mat-icon class="menu-arrow" *ngIf="isSubMenuExpanded('accounts')">keyboard_arrow_down</mat-icon>
                   <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('accounts')">expand_more</mat-icon>
@@ -185,7 +187,7 @@
 
               <mat-nav-list>
                 <mat-list-item class="submenu securityLi" (click)="toggleSubMenu('inventory')">
-                  <mat-icon>inventory</mat-icon>
+                    <a><img src="/assets/img/icons/quotation1.svg" alt="img"><span></span>  </a>
                   Inventory
                   <mat-icon class="dropdown-icon" *ngIf="isSubMenuExpanded('inventory')">keyboard_arrow_down</mat-icon>
                   <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('inventory')">expand_more</mat-icon>
@@ -207,7 +209,7 @@
 
               <mat-nav-list>
                 <mat-list-item class="submenu securityLi menu-arrow" (click)="toggleSubMenu('purchase')">
-                  <mat-icon>purchase</mat-icon>
+                    <a><img src="/assets/img/icons/purchase1.svg" alt="img"><span></span> </a>
                   Purchase
                   <mat-icon class="dropdown-icon" *ngIf="isSubMenuExpanded('purchase')">keyboard_arrow_down</mat-icon>
                   <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('purchase')">expand_more</mat-icon>
@@ -226,7 +228,7 @@
 
               <mat-nav-list>
                 <mat-list-item class="submenu securityLi menu-arrow" (click)="toggleSubMenu('sales')">
-                  <mat-icon>sales</mat-icon>
+                    <a><img src="/assets/img/icons/expense1.svg" alt="img"><span></span> </a>
                   Sales
                   <mat-icon class="dropdown-icon" *ngIf="isSubMenuExpanded('sales')">keyboard_arrow_down</mat-icon>
                   <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('sales')">expand_more</mat-icon>
@@ -257,7 +259,7 @@
 
               <mat-nav-list>
                 <mat-list-item class="submenu securityLi menu-arrow" (click)="toggleSubMenu('utilities')">
-                  <mat-icon>utilities</mat-icon>
+                    <a><img src="/assets/img/icons/transfer1.svg" alt="img"><span></span> </a>
                   Utilities
                   <mat-icon class="dropdown-icon" *ngIf="isSubMenuExpanded('utillities')">keyboard_arrow_down</mat-icon>
                   <mat-icon class="dropdown-icon" *ngIf="!isSubMenuExpanded('utillities')">expand_more</mat-icon>
@@ -269,7 +271,7 @@
                   <mat-list-item>Mobile App Slider</mat-list-item>
                 </mat-list>
                 </mat-nav-list>
-
+            
             </ul>        
         </div>
       </div>
@@ -809,7 +811,7 @@
           <a href="javascript:void(0);" style="margin: 10px;">About</a>
           <a href="javascript:void(0);">Contact</a>
         </div>
-        <p b-geo0b2jv1f>Copyright &copy; 2023 Softaxe</p>
+        <p>Copyright &copy; 2023 Softaxe</p>
       </div>
 
     </div>
