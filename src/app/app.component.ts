@@ -1,4 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { SharedService } from './services/shared.service';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,9 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 })
 export class AppComponent {
   title = 'Assets';
+
+  constructor(public sharedService: SharedService){}
+
   showSidebar = true;
 
   toggleSidebar() {

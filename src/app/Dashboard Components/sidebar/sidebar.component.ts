@@ -1,5 +1,6 @@
 import { Component, ElementRef, AfterViewInit } from '@angular/core';
 import * as $ from 'jquery';
+import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,7 +9,13 @@ import * as $ from 'jquery';
 })
 
 export class SidebarComponent implements AfterViewInit {
-  constructor(private elementRef: ElementRef) {}
+  constructor(private elementRef: ElementRef, public sharedService: SharedService) {}
+
+  sidebarVisible: boolean = false;
+
+  toggleSidebar() {
+    this.sidebarVisible = !this.sidebarVisible;
+  }
 
   ngAfterViewInit() {
     const toggleBtn = $('#toggle_btn');

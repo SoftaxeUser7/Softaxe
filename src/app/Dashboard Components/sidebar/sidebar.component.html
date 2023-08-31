@@ -1,4 +1,8 @@
-<div class="sidebar" id="sidebar">
+
+<!-- <button class="btn btn-dark d-md-none" (click)="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+</button> -->
+<div class="sidebar" id="sidebar" [ngClass]="{'show': sidebarVisible}" *ngIf="sharedService.showHeaderSidebar">
     <div class="slimScrollDiv">
         <div class="sidebar-inner slimscroll">
             <div id="sidebar-menu" class="sidebar-menu">

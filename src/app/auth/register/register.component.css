@@ -1,0 +1,62 @@
+.custom-autocomplete-panel {
+    max-height: 100px; /* Adjust the desired height */
+    overflow-y: auto;
+  }
+  
+  .box {
+    max-width: 200px;
+  }
+
+  .custom-select {
+    width: 210px;
+    height: 39px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    background-color: white; /* Change the background color as needed */
+    padding: 0.375rem 0.75rem; /* Adjust padding as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for a box-like appearance */
+}
+
+
+/* styles.css or your component's stylesheet */
+
+/* Layout styles */
+.main-content {
+  margin-top: 60px; /* Adjust based on your header's height */
+  margin-left: 250px; /* Adjust based on your sidebar's width */
+  padding: 20px;
+  overflow: auto;
+  height: calc(100vh - 60px); /* Adjust for header's height */
+}
+
+/* Adjustments for your app-register component */
+app-register {
+  width: 100%; /* Make sure the component takes the full width available */
+  height: 100%; /* Make sure the component takes the full height available */
+  background-color: white; /* Set a background color for the component */
+  padding: 20px; /* Add padding to create some space between content and edges */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow for a visual separation */
+  border-radius: 10px; /* Add rounded corners */
+}
+
+
+@media (max-width: 990px) {
+  /* Override styles for smaller screens */
+  .main-content {
+    flex-direction: column; /* Stack items vertically */
+    margin-left: 0; /* Remove sidebar margin */
+  }
+
+  /* Adjustments for your app-register component on smaller screens */
+  app-register {
+    width: 100%; /* Take full width of the viewport */
+    height: auto; /* Reset height */
+    margin-top: 20px; /* Add some space between header and component */
+    margin-bottom: 20px; /* Add some space at the bottom */
+    padding: 10px; /* Adjust padding for smaller screens */
+    box-shadow: none; /* Remove box shadow for smaller screens */
+    border-radius: 0; /* Remove rounded corners for smaller screens */
+  }
+}
+  

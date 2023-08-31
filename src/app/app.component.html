@@ -1,1 +1,20 @@
-<app-dashboard></app-dashboard>
+<!-- <app-dashboard></app-dashboard> -->
+<!-- <app-login></app-login> -->
+<!-- <app-register></app-register> -->
+<!-- <app-header></app-header> -->
+<!-- <app-sidebar></app-sidebar> -->
+
+<!-- app.component.html -->
+
+<!-- Header -->
+<!-- app.component.html -->
+
+<app-header *ngIf="sharedService.showHeaderSidebar"></app-header>
+<app-sidebar *ngIf="sharedService.showHeaderSidebar"></app-sidebar>
+
+
+<!-- <div class="main-content"> -->
+    <router-outlet></router-outlet>
+<!-- </div> -->
+
+
